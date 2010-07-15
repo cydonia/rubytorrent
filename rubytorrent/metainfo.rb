@@ -135,7 +135,7 @@ class MetaInfo
     @s = TypedStruct.new do |s|
       s.field :info => MetaInfoInfo, :announce => URI::HTTP,
               :announce_list => Array, :creation_date => Time,
-              :comment => String, :created_by => String, :encoding => String
+              :comment => String, :created_by => String, :encoding => String, :key => String
       s.label :announce_list => "announce-list", :creation_date => "creation date",
               :created_by => "created by"
       s.array :announce_list
