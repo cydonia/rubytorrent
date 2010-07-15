@@ -26,7 +26,7 @@ class MetaInfoFormatError < StandardError; end
 class MetaInfoInfoFile
   def initialize(dict=nil)
     @s = TypedStruct.new do |s|
-      s.field :length => Integer, :md5sum => String, :sha1 => String,
+      s.field :length => Integer, :md5sum => String, :sha1 => String, :private => Integer
               :path => String
       s.array :path
       s.required :length, :path
